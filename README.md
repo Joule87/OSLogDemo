@@ -1,7 +1,7 @@
 # OSLogDemo
 Wrapping os_log to create a custom logger
 
-Output:
+Console Output:
 2019-12-11 15:50:55.698119-0300 OSLogDemo[76228:3192482] [app] [main]
 [ViewController.swift:22 createUser()] > Created user with name: John the Tester 
 with: john@example.com and password: qwerty
