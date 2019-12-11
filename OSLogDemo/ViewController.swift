@@ -10,11 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let logger = Logger()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        createUser()
     }
 
-
+    func createUser() {
+        let user = User(username: "John the Tester", password: "qwerty", email: "john@example.com")
+        logger.log(category: .app, message: "Created user with name: \(user.username) with: \(user.email) and password: \(user.password)")
+    }
 }
 

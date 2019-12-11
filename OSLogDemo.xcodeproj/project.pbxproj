@@ -13,6 +13,8 @@
 		F42F75FE23A164A10002C920 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F42F75FC23A164A10002C920 /* Main.storyboard */; };
 		F42F760023A164A20002C920 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F42F75FF23A164A20002C920 /* Assets.xcassets */; };
 		F42F760323A164A20002C920 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F42F760123A164A20002C920 /* LaunchScreen.storyboard */; };
+		F42F760C23A164D50002C920 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F760B23A164D50002C920 /* User.swift */; };
+		F42F760F23A16F3D0002C920 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F760E23A16F3D0002C920 /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		F42F75FF23A164A20002C920 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F42F760223A164A20002C920 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F42F760423A164A20002C920 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F42F760B23A164D50002C920 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F42F760E23A16F3D0002C920 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		F42F75F523A164A10002C920 /* OSLogDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F42F760D23A16F2A0002C920 /* Utils */,
+				F42F760A23A164C80002C920 /* Model */,
 				F42F75F623A164A10002C920 /* AppDelegate.swift */,
 				F42F75F823A164A10002C920 /* SceneDelegate.swift */,
 				F42F75FA23A164A10002C920 /* ViewController.swift */,
@@ -65,6 +71,22 @@
 				F42F760423A164A20002C920 /* Info.plist */,
 			);
 			path = OSLogDemo;
+			sourceTree = "<group>";
+		};
+		F42F760A23A164C80002C920 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F42F760B23A164D50002C920 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F42F760D23A16F2A0002C920 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F42F760E23A16F3D0002C920 /* Logger.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +160,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F42F760F23A16F3D0002C920 /* Logger.swift in Sources */,
+				F42F760C23A164D50002C920 /* User.swift in Sources */,
 				F42F75FB23A164A10002C920 /* ViewController.swift in Sources */,
 				F42F75F723A164A10002C920 /* AppDelegate.swift in Sources */,
 				F42F75F923A164A10002C920 /* SceneDelegate.swift in Sources */,
@@ -287,6 +311,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ACA42AA29E;
 				INFOPLIST_FILE = OSLogDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +319,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jcollado.OSLogDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,6 +330,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ACA42AA29E;
 				INFOPLIST_FILE = OSLogDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +338,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jcollado.OSLogDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
